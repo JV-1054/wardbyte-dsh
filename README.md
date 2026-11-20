@@ -53,14 +53,14 @@ The analysis engine is the `wardbyte` Python package. A prebuilt wheel ships wit
 releases, so no compiler is needed:
 
 ```sh
-pip install https://github.com/JV-1054/wardbyte-dsh/releases/download/wardbyte-core-v1.2.1/wardbyte-1.2.1-py3-none-any.whl
+pip install https://github.com/JV-1054/wardbyte-dsh/releases/download/v1.3.0/wardbyte-1.2.1-py3-none-any.whl
 ```
 
 <details>
 <summary>Or install from the source distribution</summary>
 
 ```sh
-pip install https://github.com/JV-1054/wardbyte-dsh/releases/download/wardbyte-core-v1.2.1/wardbyte-1.2.1.tar.gz
+pip install https://github.com/JV-1054/wardbyte-dsh/releases/download/v1.3.0/wardbyte-1.2.1.tar.gz
 ```
 </details>
 
