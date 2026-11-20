@@ -1,6 +1,6 @@
 {
   "name": "dsh-wardbyte",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Native DSH plugin for the Wardbyte binary-analysis toolkit: 26 model-facing tools (binary stats/parse/disassembly/diff/YARA/func-xref/capa/assessment, Keystone assembly, Unicorn emulation, filesystem/code-data queries, analyst notes) served by a persistent Python worker that drives the pip-installed wardbyte server core directly.",
   "keywords": [
     "deepseek",
