@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Wardbyte",
-    "description": "Wardbyte binary-analysis toolkit as 26 native DSH tools: binary triage and parsing, disassembly, diffing, YARA, function xrefs, FLARE capa, composite assessment, Keystone assembly, Unicorn emulation, filesystem and code-data queries, and analyst notes. Requires Python 3.12+ with the pip-installed wardbyte package; configure pythonPath if Python is not on PATH. A persistent worker starts on the first tool call and stays warm until the plugin unmounts; every failure returns a structured payload instead of breaking the tool call."
+    "description": "Wardbyte binary analysis as 26 native DeepSeek Harness tools. Triage binaries (size, hashes, entropy, imphash, ssdeep, tlsh), parse ELF/PE/Mach-O structure with LIEF, disassemble with Capstone, diff two binaries, hunt with YARA, trace function xrefs, fingerprint capabilities with FLARE capa, run a composite assessment, assemble with Keystone, emulate with Unicorn, query filesystem/code-data (Tree-sitter, JSON, SQLite), and keep analyst notes. Requires Python 3.11+ with the pip-installed wardbyte package — set pythonPath if python is not on PATH. A persistent worker starts on the first tool call and stays warm until the plugin unmounts; every failure returns a structured payload instead of breaking the tool call."
   }
 }

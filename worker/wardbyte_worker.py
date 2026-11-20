@@ -23,8 +23,9 @@ def main() -> None:
         sys.stdout.write(json.dumps({
             "ok": False,
             "fatal": f"The wardbyte Python package is not installed for this interpreter "
-                     f"({sys.executable or sys.exec_prefix}); install it with: pip install wardbyte "
-                     f"(original error: {exc})",
+                     f"({sys.executable or sys.exec_prefix}); install it with: pip install "
+                     f"https://github.com/JV-1054/wardbyte-dsh/releases/download/wardbyte-core-v1.2.1/"
+                     f"wardbyte-1.2.1-py3-none-any.whl (original error: {exc})",
         }) + "\n")
         sys.stdout.flush()
         return

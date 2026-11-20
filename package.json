@@ -29,9 +29,11 @@
     "index.js",
     "lib",
     "worker",
+    "!worker/__pycache__",
     "cordis.patch.yml",
     "locale",
     "icon.svg",
+    "test",
     "README.md",
     "LICENSE"
   ],
