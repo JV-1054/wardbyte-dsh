@@ -1,0 +1,46 @@
+{
+  "name": "dsh-wardbyte",
+  "version": "1.2.1",
+  "description": "Native DSH plugin for the Wardbyte binary-analysis toolkit: 26 model-facing tools (binary stats/parse/disassembly/diff/YARA/func-xref/capa/assessment, Keystone assembly, Unicorn emulation, filesystem/code-data queries, analyst notes) served by a persistent Python worker that drives the pip-installed wardbyte server core directly.",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "cordis",
+    "wardbyte",
+    "binary-analysis",
+    "reverse-engineering",
+    "capa",
+    "yara",
+    "disassembly"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "worker",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

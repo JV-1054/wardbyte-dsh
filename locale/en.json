@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Wardbyte",
+    "description": "Wardbyte binary-analysis toolkit as 26 native DSH tools: binary triage and parsing, disassembly, diffing, YARA, function xrefs, FLARE capa, composite assessment, Keystone assembly, Unicorn emulation, filesystem and code-data queries, and analyst notes. Requires Python 3.12+ with the pip-installed wardbyte package; configure pythonPath if Python is not on PATH. A persistent worker starts on the first tool call and stays warm until the plugin unmounts; every failure returns a structured payload instead of breaking the tool call."
+  }
+}

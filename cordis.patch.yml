@@ -1,0 +1,24 @@
+# dsh-wardbyte bundle patch.
+#
+# Mounts the native Wardbyte plugin for every session of the profile. The
+# plugin drives a persistent Python worker (JSON lines over stdio) that
+# imports the pip-installed `wardbyte` package and calls its server core
+# directly - no MCP wire protocol involved.
+#
+# Every field is optional; the shipped defaults are shown in the comments.
+# pythonPath falls back to `python` from PATH. On Windows, point it at your
+# interpreter when Python is not on PATH, e.g.:
+#
+#     - insert:
+#         - id: dsh-wardbyte
+#           name: dsh-wardbyte
+#           config:
+#             pythonPath: C:\Users\<you>\AppData\Local\Programs\Python\Python312\python.exe
+#
+# workerPath: ''                 # '' = the packaged worker/wardbyte_worker.py next to index.js
+# startupTimeoutMs: 120000       # first-request budget; wardbyte imports lief/capa/capstone/yara
+# toolTimeoutMs: 180000          # per-tool-call budget; wardbyte enforces its own 20s limits inside
+- insert:
+    - id: dsh-wardbyte
+      name: dsh-wardbyte
+      config: {}
